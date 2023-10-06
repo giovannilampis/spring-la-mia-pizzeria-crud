@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body th:object="${pizza}">
+	
+	<h1>Pizza: [[*{name}]]</h1>
+	
+	<h2>[[*{description}]]</h2>
+	
+	<h3>[[*{price}]] €</h3>
+	
+	<img th:src="*{photo}" width="400px" />
+	
+</body>
+</html>
