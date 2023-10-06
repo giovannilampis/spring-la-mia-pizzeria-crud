@@ -20,7 +20,7 @@ public class SpringLaMiaPizzeriaCrudApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		String photo = "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg";
+		String photo = "https://www.finedininglovers.it/sites/g/files/xknfdk1106/files/styles/recipes_1200_800_fallback/public/fdl_content_import_it/margherita-50kalo.jpg?itok=v9nHxNMS";
 		
 		Pizza pizza1 = new Pizza("pizza 1", "desc pizza 1", photo, 10);
 		Pizza pizza2 = new Pizza("pizza 2", "desc pizza 2", photo, 12);
