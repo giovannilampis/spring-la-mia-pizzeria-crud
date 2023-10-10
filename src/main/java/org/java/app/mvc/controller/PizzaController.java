@@ -58,7 +58,7 @@ public class PizzaController {
 		
 		return "pizza-create";
 	}
-	@PostMapping("/pizzas/create")
+	@PostMapping("/create")
 	public String storeNewPizza(
 			@Valid @ModelAttribute Pizza pizza,
 			BindingResult bindingResult,
