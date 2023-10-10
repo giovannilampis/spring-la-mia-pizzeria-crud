@@ -20,18 +20,34 @@
 			<ul>
 				<li th:each="err : ${#fields.errors('name')}" th:text="${err}"></li>
 			</ul> <br></br>
-			
-			
 		</div>
 		
 		<label for="photo">Photo</label>
 		<input type="text" name="photo" th:value="*{photo}"> <br></br>
 		
+		<div th:if="${#fields.hasErrors('photo')}">
+			<ul>
+				<li th:each="err : ${#fields.errors('photo')}" th:text="${err}"></li>
+			</ul> <br></br>
+		</div>
+		
 		<label for="description">Description</label>
 		<input type="text" name="description" th:value="*{description}"> <br></br>
 		
+		<div th:if="${#fields.hasErrors('description')}">
+			<ul>
+				<li th:each="err : ${#fields.errors('description')}" th:text="${err}"></li>
+			</ul> <br></br>
+		</div>
+		
 		<label for="price">Price</label>
 		<input type="number" name="price" th:value="*{price}"> <br></br>
+		
+		<div th:if="${#fields.hasErrors('price')}">
+			<ul>
+				<li th:each="err : ${#fields.errors('price')}" th:text="${err}"></li>
+			</ul> <br></br>
+		</div>
 		
 		<input type="submit" value="CREA">
 		

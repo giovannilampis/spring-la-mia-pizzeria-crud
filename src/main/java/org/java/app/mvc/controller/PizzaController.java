@@ -79,6 +79,6 @@ public class PizzaController {
 		
 		pizzaServ.save(pizza);
 		
-		return "redirect:/";
+		return "redirect:/pizzas";
 	}
 }
