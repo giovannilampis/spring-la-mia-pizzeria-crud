@@ -10,19 +10,20 @@
 	
 	<form
 		th:object="${pizza}"
+		method="POST"
 	>
 		
 		<label for="name">Name</label>
-		<input type="text" name="name" value="*{name}"> <br></br>
+		<input type="text" name="name" th:value="*{name}"> <br></br>
 		
 		<label for="photo">Photo</label>
-		<input type="text" name="photo" value="*{photo}"> <br></br>
+		<input type="text" name="photo" th:value="*{photo}"> <br></br>
 		
 		<label for="description">Description</label>
-		<input type="text" name="description" value="*{description}"> <br></br>
+		<input type="text" name="description" th:value="*{description}"> <br></br>
 		
 		<label for="price">Price</label>
-		<input type="number" name="price" value="*{price}"> <br></br>
+		<input type="number" name="price" th:value="*{price}"> <br></br>
 		
 		<input type="submit" value="CREA">
 		
