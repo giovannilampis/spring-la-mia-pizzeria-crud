@@ -32,9 +32,10 @@ public class PizzaController {
     }
 
 	
-	@GetMapping("/pizzas/{id}")
+	@GetMapping("/{id}")
 	public String getShow(@PathVariable int id, Model model) {
 		
+		System.out.print("show");
 		Pizza pizza = pizzaServ.findById(id);
 		
 		model.addAttribute("pizza", pizza);
