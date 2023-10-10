@@ -4,9 +4,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<br>
 	
 	<h1>Pizzeria Vecchio Mulino</h1>
+	
+	<a th:href="@{/pizzas/create}">Crea una nuova pizza</a> <br></br>
 	
 	<h2 th:if="${pizzas.size() < 1}">Le pizze sono momentaneamente esaurite ...</h2>
 		

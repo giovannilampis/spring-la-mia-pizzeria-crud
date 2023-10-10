@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>Creazione di una nuova buonissima pizza</h1>
+	
+	<form
+		th:object="${pizza}"
+	>
+		
+		<label for="name">Name</label>
+		<input type="text" name="name" value="*{name}"> <br></br>
+		
+		<label for="photo">Photo</label>
+		<input type="text" name="photo" value="*{photo}"> <br></br>
+		
+		<label for="description">Description</label>
+		<input type="text" name="description" value="*{description}"> <br></br>
+		
+		<label for="price">Price</label>
+		<input type="number" name="price" value="*{price}"> <br></br>
+		
+		<input type="submit" value="CREA">
+		
+	</form>
+	
+</body>
+
+</html>
