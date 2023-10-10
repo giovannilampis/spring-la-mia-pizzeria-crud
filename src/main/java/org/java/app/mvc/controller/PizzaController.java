@@ -21,12 +21,15 @@ public class PizzaController {
     private PizzaServ pizzaServ;
 
     @GetMapping
-    public String getIndex(Model model, @RequestParam(required = false) String nome) {
-
-        List<Pizza> pizzas = nome == null ? pizzaServ.findAll() : pizzaServ.findByName(nome);
+    public String getIndex(@RequestParam(required = false) String searchTitle, Model model) {
+    	
+        List<Pizza> pizzas = searchTitle == null
+        
+        	? pizzaServ.findAll()
+        	: pizzaServ.findByName(searchTitle);
 
         model.addAttribute("pizzas", pizzas);
-        System.out.println("pizza: " + pizzas);
+        model.addAttribute("searchTitle", searchTitle);
 
         return "pizza-index";
     }
